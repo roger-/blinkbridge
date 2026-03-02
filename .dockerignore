@@ -1,0 +1,36 @@
+# Git files
+.git
+.gitignore
+.gitmodules
+
+# Documentation (except README)
+*.md
+!README.md
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+.pytest_cache
+.coverage
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Config (will be mounted as volume)
+config/
+
+# Temporary files
+tmp/
+*.log

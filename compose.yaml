@@ -10,11 +10,8 @@ services:
       #   target: /working
       #   tmpfs:
       #     size: 52428800  # 50MB  
+    ports:
+      - 8554:8554  # RTSP port for MediaMTX
     tty: true # for color logs
     environment:
       - BLINKBRIDGE_CONFIG=/config/config.json
-  mediamtx:
-    image: bluenviron/mediamtx
-    container_name: mediamtx
-    ports:
-      - 8554:8554

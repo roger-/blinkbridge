@@ -1,0 +1,31 @@
+# MediaMTX configuration for blinkbridge
+
+# Listen on all interfaces
+rtspAddress: :8554
+
+# Logging
+logLevel: warn
+logDestinations: [stdout]
+
+# Performance settings
+readTimeout: 10s
+writeTimeout: 10s
+
+# Protocol settings
+protocols: [tcp]
+encryption: "no"
+rtpAddress: :8000
+rtcpAddress: :8001
+
+# Path settings - accept any path for camera streams
+paths:
+  all:
+    # Allow publishing from localhost (blinkbridge)
+    publishUser: ""
+    publishPass: ""
+    publishIPs: []
+    
+    # Allow reading from anywhere
+    readUser: ""
+    readPass: ""
+    readIPs: []
